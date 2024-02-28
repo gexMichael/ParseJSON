@@ -10,3 +10,7 @@ https://www.red-gate.com/simple-talk/sql/t-sql-programming/consuming-json-string
 Here is the latest version of the code. Hopefully it is up-to-date.I've updated it to run in a binary collation.
 
 If you have any fixes, please let mye know and I'll add them in.
+
+### 應用情境
+* 主要應用於 orm_api 的核心程式
+* 原程式版本有一個小問題，已經通知原作者，並已修正(@token MAX)
