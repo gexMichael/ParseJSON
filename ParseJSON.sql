@@ -11,7 +11,7 @@ Summary: >
 
   Then, the routine iteratively finds the next structure that has no structure 
   Contained within it, (and is, by definition the leaf structure), and parses it,
-  replacing it with an object token of the form ‘@Objectxxx‘, or ‘@arrayxxx‘, 
+  replacing it with an object token of the form â€˜@Objectxxxâ€˜, or â€˜@arrayxxxâ€˜, 
   where xxx is the object id assigned to it. The values, or name/value pairs 
   are retrieved from the string table and stored in the hierarchy table. G
   radually, the JSON document is eaten until there is just a single root
@@ -73,7 +73,7 @@ Returns: >
 	    @end INT,--index of the end of the token that you are parsing
 	    @param INT,--the parameter at the end of the next Object/Array token
 	    @EndOfName INT,--the index of the start of the parameter at end of Object/Array token
-	    @token NVARCHAR(200),--either a string or object
+	    @token NVARCHAR(MAX),--either a string or object(Michael Modify 20240228)
 	    @value NVARCHAR(MAX), -- the value as a string
 	    @SequenceNo int, -- the sequence number within a list
 	    @Name NVARCHAR(200), --the Name as a string
